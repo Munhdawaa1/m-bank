@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-Bank</title>
+    <meta name="description" content="M-Bank албан ёсны вэб хуудсыг дуурайлгасан сайт">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/_astro/index.BjjV-eWG.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans antialiased bg-[#1E2A38] text-white"> <!-- ✅ Header -->
+    <header class="bg-[#1E2A38] text-white shadow-sm sticky top-0 z-50">
+        <div class="mx-auto px-20 py-1 flex justify-between items-center"> <!-- Зүүн -->
+            <div class="flex items-center space-x-6"> <a href="/" class="flex items-center space-x-2"> <img
+                        src="/images/ic_m_large.png" alt="M-Bank Logo" class="h-8 w-auto"> </a>
+                <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-400"> <a href="#"
+                        class="px-1 hover:text-white transition">Танд</a> <a href="#"
+                        class="px-1 hover:text-white transition">Таны бизнест</a> <a href="#"
+                        class="px-1 hover:text-white transition">Бид</a> </nav>
+            </div> <!-- Баруун -->
+            <div class="flex items-center space-x-6 py-1"> <a href="#"
+                    class="text-sm font-medium border-r-2 px-5 border-gray-600 text-[#26E3A9] hover:underline">М
+                    туслах</a> <a href="#"
+                    class="bg-[#26E3A9] text-white px-4 py-1 rounded-md text-sm font-semibold hover:bg-[#20c997] transition">Нэвтрэх</a>
+            </div>
+        </div>
+    </header> <!-- ✅ Hero Section (carousel) -->
+    <div class="relative w-full h-[700px] overflow-hidden">
+        <div id="carousel" class="w-full h-full relative">
+            <div class="absolute inset-0 w-full h-full bg-center bg-cover transition-opacity duration-1000 opacity-100 brightness-170 contrast-110"
+                style="background-image: url(/images/service1.png);" data-index="0">
+                <div class="bg-black/40 w-full h-full flex items-center justify-center">
+                    <div class="text-white text-center px-6"></div>
+                </div>
+            </div>
+            <div class="absolute inset-0 w-full h-full bg-center bg-cover transition-opacity duration-1000 opacity-100 brightness-170 contrast-110"
+                style="background-image: url(/images/service2.png);" data-index="1">
+                <div class="bg-black/40 w-full h-full flex items-center justify-center">
+                    <div class="text-white text-center px-6"></div>
+                </div>
+            </div>
+            <div class="absolute inset-0 w-full h-full bg-center bg-cover transition-opacity duration-1000 opacity-100 brightness-170 contrast-110"
+                style="background-image: url(/images/service3.png);" data-index="2">
+                <div class="bg-black/40 w-full h-full flex items-center justify-center">
+                    <div class="text-white text-center px-6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+        type="module">const t = document.querySelectorAll("#carousel > div"); let e = 0; function l(c) { t.forEach((o, n) => { o.style.opacity = n === c ? "1" : "0" }) } l(e); setInterval(() => { e = (e + 1) % t.length, l(e) }, 4e3);</script>
+    <!-- Cart 1 -->
+    <div class="bg-white py-30 px-30">
+        <div class="mx-auto grid grid-cols-2 items-center gap-20 px-40 py-40"> <!-- Зүүн тал: Текст -->
+            <div class="text-[#1E2A38]">
+                <h1 class="text-xl md:text-6xl font-extrabold leading-tight mb-8">
+                    Танд зориулсан <br> шинэ үеийн банк
+                </h1>
+                <p class="text-2xl text-gray-500 mb-8">
+                    Банкны салбар хаах цагийг мэдэх шаардлагагүй.<br>
+                    Санхүүгийн бүх үйлчилгээг зайнаас аваарай.
+                </p> <button
+                    class="inline-flex items-center px-6 py-3 bg-white text-[#1E2A38] text-lg font-semibold rounded-full border border-[#1E2A38] hover:bg-[#20c997] hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg> </button>
+            </div> <!-- Баруун тал: Зураг -->
+            <div class="flex justify-center"> <img src="/images/image.png" alt="M-Bank App UI"
+                    class="w-[700px]  rounded-3xl">
+            </div>
+        </div>
+    </div> <!-- Cart 2 -->
+    <div class="bg-[#1E2A38] py-40 px-40">
+        <div class="mx-auto grid grid-cols-2 items-center gap-20"> <!-- Баруун тал: Зураг -->
+            <div class="flex justify-center"> <img src="/images/landing_2.png" alt="M-Bank App UI" class=" rounded-3xl">
+            </div> <!-- Зүүн тал: Текст -->
+            <div class="text-white">
+                <h1 class="text-xl md:text-6xl font-extrabold leading-tight mb-8">
+                    Танд зориулсан <br> шинэ үеийн банк
+                </h1>
+                <p class="text-2xl text-gray-500 mb-8">
+                    Банкны салбар хаах цагийг мэдэх шаардлагагүй.<br>
+                    Санхүүгийн бүх үйлчилгээг зайнаас аваарай.
+                </p> <button
+                    class="inline-flex items-center px-6 py-3 bg-[#1E2A38] text-white text-lg font-semibold rounded-full border border-gray-300 hover:bg-[#20c997] hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg> </button>
+            </div>
+        </div>
+    </div>
+    <section class="bg-[#2A2A2E] text-white py-20 px-6 lg:px-40">
+        <div class="mx-auto">
+            <h2 class="text-6xl py-10 font-bold text-center mb-12">Блог</h2>
+            <div class="flex flex-col lg:flex-row bg-[#333439] rounded-2xl overflow-hidden group">
+                <!-- Зурагтай хэсэг -->
+                <div class="relative basis-[70%]"> <img src="/images/M_newsroom_thumbnail_S_1_33797a5486.png"
+                        alt="Блог зураг" class="w-full h-full object-cover"> </div> <!-- Текст хэсэг -->
+                <div class="basis-[30%] flex flex-col justify-center px-10 py-12"> <span
+                        class="text-xl text-gray-400 mb-2">Бүтээгдэхүүн</span>
+                    <h3 class="text-3xl font-bold mb-4 leading-snug text-white">
+                        Найдвартай хамтрагчтай бол холын замд амар
+                    </h3>
+                    <p class="text-sm text-gray-400">2025.05.19 • 2 минут унших</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#2A2A2E] text-white py-20 px-6 lg:px-40">
+        <div class="mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-[#333439] rounded-2xl overflow-hidden flex flex-col"> <img
+                        src="/images/Loyalty_M_Book_2_c5ab2fec2f.png" alt="Зураг 1" class="w-full h-120 object-cover">
+                    <div class="p-6 flex flex-col justify-between flex-grow"> <span
+                            class="text-xl text-gray-400 mb-2 pt-5">Бүтээгдэхүүн</span>
+                        <h3 class="text-4xl font-bold mb-4 leading-snug">
+                            M лояалти-тай байхад өдөр бүр номын баяр
+                        </h3>
+                        <p class="text-xl text-gray-400 pb-5 mt-auto">
+                            2025.05.16 • 1 минут унших
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-[#333439] rounded-2xl overflow-hidden flex flex-col"> <img
+                        src="/images/Loyalty_Thumbnail_8b73067e9d.png" alt="Зураг 2" class="w-full h-120 object-cover">
+                    <div class="p-6 flex flex-col justify-between flex-grow"> <span
+                            class="text-xl text-gray-400 mb-2 pt-5">Бүтээгдэхүүн</span>
+                        <h3 class="text-4xl font-bold mb-4 leading-snug pb-30">
+                            Хөнгөлөлт, урамшуулал, буцаан олголтыг нэг дор багтаасан M лояалти
+                        </h3>
+                        <p class="text-xl text-gray-400 pb-5 mt-auto">
+                            2025.05.12 • 2 минут унших
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-16"> <button
+                class="bg-[#333439] text-white text-2xl font-semibold py-3 px-10 rounded-2xl hover:bg-gray-200 transition duration-300">
+                Блог харах
+            </button> </div>
+    </section>
+    <footer class="bg-gray-700 text-white"> <a href="/" class="flex items-center space-x-2"> <img
+                src="/images/fooder.png" alt="M-Bank fooder" class="h-full w-full"> </a> </footer>
+</body><!-- ✅ Footer -->
+
+</html>
